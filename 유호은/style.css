@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    font-family: pretendard;
+    margin: 0;
+}
+
+#header {
+    padding: 50px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#headerImg {
+    width: 150px;
+    height: auto;
+}
+
+#name {
+    color: #563A9C;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+main {
+    padding: 15px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#top {
+    /* width: 100%; */
+    /* min-width: 100px; */
+    background-color: #FEF3E2;
+    padding: 10px;
+}
+
+#msg {
+    /* width: 1000px; */
+    color: #563A9C;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.card {
+    /* width: 100%; */
+    /* min-width: 1000px; */
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardTop {
+    color: #6A42C2;
+    font-size: 2rem;
+    font-weight: 400;
+    border-bottom: 1px solid #8B5DFF;
+}
+
+.description {
+    width : ;
+    color: #1A1A1D;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.cardMid {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.infoLabel {
+    width: 200px;
+    color: #8B5DFF;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.likedImg {
+    width: 100px;
+}
+
+.infoContent {
+    color: #1A1A1D;
+    font-size: 1.3rem;
+}
+
+.link {
+    background-color: #FEF3E2;
+    border-radius: 8px;
+    padding: 10px;
+    color: #1A1A1D;
+    text-decoration: none;
+}
