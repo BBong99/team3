@@ -1,8 +1,11 @@
 const content = document.querySelector("#content");
 const input = document.querySelector("#input");
 const command = document.querySelector("#command");
+const inputDiv = document.querySelector("#inputDiv");
 
 input.focus();
+
+let scroll = 0;
 
 function commandFunc (event) {
     if(event.key === 'Enter') {
@@ -26,10 +29,13 @@ function commandFunc (event) {
             logs.innerHTML += '<br />이해할 수 없는 명령어입니다.'
         }
 
+        
         command.before(logs);
-        windows.scrollTo(0, document.body.scrollHeight);
+        
+        window.scrollTo(0, document.body.scrollHeight);
         
     }
+    
 }
 input.addEventListener("keydown", commandFunc);
 document.addEventListener("click", function(){
