@@ -137,7 +137,7 @@ var bar = function () {
         question: `문자열 배열이 주어졌을 때, 각 문자열을 뒤집어서
         새로운 배열을 반환하세요.`, 
         code: `function reverseStrings(array) {
-  // 여기에 구현
+// 여기에 구현
 }
 
 const words = ["hello", "world", "javascript"];
@@ -150,7 +150,7 @@ console.log(reverseStrings(words));
         question: `배열을 파라미터로 받아서 중복된 요소가
         존재하면 true, 아니면 false를 반환하세요.`, 
         code: `function hasDuplicates(array) {
-  // 여기에 구현
+// 여기에 구현
 }
 
 console.log(hasDuplicates([1, 2, 3, 4]));    // 출력: false
@@ -176,7 +176,7 @@ console.log(hasDuplicates([1, 2, 2, 4]));    // 출력: true`,
 목표: 주어진 배열의 각 숫자를 제곱으로 변환하는 함수를 작성하세요.
 `, 
         code: `function squareArray(array) {
-  // 여기에 함수를 작성하세요.
+// 여기에 함수를 작성하세요.
 }
 
 const numbers = [1, 2, 3, 4];
@@ -194,7 +194,7 @@ console.log(squared); // [1, 4, 9, 16]`,
 함수에 의해 구현된 테스트를 통과한 요소만 필터링합니다.
 `, 
         code: `function filterEvenNumbers(array) {
-  // 여기에 함수를 작성하세요.
+// 여기에 함수를 작성하세요.
 }
 
 const numbers = [1, 2, 3, 4, 5, 6];
@@ -247,7 +247,7 @@ console.log(total); // 10`,
 힌트: Math.max()와 스프레드 연산자(...)를 사용할 수 있습니다.
 `, 
         code: `function findMax(array) {
-  // 여기에 함수를 작성하세요.
+// 여기에 함수를 작성하세요.
 }
 
 const numbers = [10, 20, 5, 8, 30];
@@ -326,13 +326,13 @@ isAverage([4, 5, 6], 5, basicPrinter); // 정답입니다!`,
 - prosessString 함수: 시작 문구를 출력하고
 프로세스를 수행하는 함수입니다.
 
-  상황에 따라 시작 문구와 프로세스를 바꿀 수 있도록,
-  첫 번째 파라미터는 문구를 출력하는 함수를,
-  두 번째 파라미터는 프로세스를 수행하는 함수를 받습니다.
+상황에 따라 시작 문구와 프로세스를 바꿀 수 있도록,
+첫 번째 파라미터는 문구를 출력하는 함수를,
+두 번째 파라미터는 프로세스를 수행하는 함수를 받습니다.
 
 - toUpperCaseString 함수: 파라미터로 들어온
 문자열 2개를 먼저 출력(입력 string: message1, message2)한 후,
-  들어온 문자열들을 대문자로 변환하여 하나의 문장으로 리턴합니다.
+들어온 문자열들을 대문자로 변환하여 하나의 문장으로 리턴합니다.
 `, 
         code: `// 함수 사용 예시
 const message1 = "hype";
@@ -353,10 +353,10 @@ process를 시작합니다.
         title: 'Q21 피보나치 수열', 
         name:'가승연', 
         question: `다음과 같이 코드와 출력값이 나오도록 피보나치 수열 코드를 작성하세요.
-         피보나치수열 : 처음 두항을 1과1로 한 후
-         그 다음 항 부터는 바로 앞 2개의 항을 더해 만든다.`, 
+피보나치수열 : 처음 두항을 1과1로 한 후
+그 다음 항 부터는 바로 앞 2개의 항을 더해 만든다.`, 
         code: `console.log(fibonacci(8)); //출력 21
-        console.log(fibonacci(9)); // 출력 34`,
+console.log(fibonacci(9)); // 출력 34`,
     },
     {
         title: 'Q22 팩토리얼 함수',
@@ -387,77 +387,73 @@ console.log(wordLengths("JavaScript is fun"));
     {
         title: 'Q25 2차원 배열의 최대 합',
         name: '가승연',
-        question: `2차원 배열(행렬)에서 각 행의 합 중 가장 큰 값을 반환하는 함수를 작성하세요.`,
-        code: `console.log(maxRowSum([[1, 2, 3], [4, 5, 6], [7, 8, 9]])); // 출력 24
-console.log(maxRowSum([[10, 20], [30, 5], [15, 15]])); // 출력 35`,
+        question: `2차원 배열(행렬)에서 각 행의 합 중
+        가장 큰 값을 반환하는 함수를 작성하세요.`,
+        code: `console.log(maxRowSum([[1, 2, 3], [4, 5, 6], [7, 8, 9]]));
+// 출력 24
+console.log(maxRowSum([[10, 20], [30, 5], [15, 15]]));
+// 출력 35`,
     },
 
 ];
 
-console.log(Questions[1].title);
-
 
 const nextButton = document.getElementById('next');
 const previousButton = document.getElementById('previous');
-const title = document.getElementById('titleId');
+const titleId = document.getElementById('titleId');
 const question = document.getElementById('questionContent');
 const code = document.getElementById('codeContent');
 const nameWho = document.getElementById('name');
 
-title.textContent = Questions[0].title;
+titleId.textContent = Questions[0].title;
 nameWho.textContent = Questions[0].name;
 question.textContent = Questions[0].question;
 code.textContent = Questions[0].code;
 
 let nowQuestionIndex = 0;
-previousButton.disabled = true;
-
+previousButton.style.backgroundColor = "gray";
 
 
 
 function nextFunc(event){
-    nowQuestionIndex += 1;
+    if(nowQuestionIndex < Questions.length - 1){
+        nowQuestionIndex += 1;
+        titleId.textContent = Questions[nowQuestionIndex].title;
+        nameWho.textContent = Questions[nowQuestionIndex].name;
+        question.textContent = Questions[nowQuestionIndex].question;
+        code.textContent = Questions[nowQuestionIndex].code;
+    }
+
     if(nowQuestionIndex > 0){
-        previousButton.disabled = false;
-        
+        previousButton.style.backgroundColor = "#FE6B8B";
     }
-    else{
-        previousButton.disabled = true;
-        
-    }
+
     if(nowQuestionIndex === Questions.length-1){
-        nextButton.disabled = true;
+        nextButton.style.backgroundColor = "gray";
     }
-    else{
-        nextButton.disabled = false;
-    }
-    title.textContent = Questions[nowQuestionIndex].title;
-    nameWho.textContent = Questions[nowQuestionIndex].name;
-    question.textContent = Questions[nowQuestionIndex].question;
-    code.textContent = Questions[nowQuestionIndex].code;
+
+    console.log(nowQuestionIndex);
+
 }
 
 function prevFunc(event){
-    nowQuestionIndex -= 1;
-    if(nowQuestionIndex === 0){
-        previousButton.disabled = true;
-    }
     if(nowQuestionIndex > 0){
-        previousButton.disabled = false;
+        nowQuestionIndex -= 1;
+        titleId.textContent = Questions[nowQuestionIndex].title;
+        nameWho.textContent = Questions[nowQuestionIndex].name;
+        question.textContent = Questions[nowQuestionIndex].question;
+        code.textContent = Questions[nowQuestionIndex].code;
     }
-    else{
-        previousButton.disabled = true;
+
+    if(nowQuestionIndex === 0){
+        previousButton.style.backgroundColor = "gray";
     }
-    if(nowQuestionIndex === Questions.length-1){
-        nextButton.disabled = true;
+    
+    if(nowQuestionIndex < Questions.length-1){
+        nextButton.style.backgroundColor = "#6b9efe";
     }
-    else{
-        nextButton.disabled = false;
-    }
-    title.textContent = Questions[nowQuestionIndex].title;
-    nameWho.textContent = Questions[nowQuestionIndex].name;
-    question.textContent = Questions[nowQuestionIndex].question;
-    code.textContent = Questions[nowQuestionIndex].code;
+
+    console.log(nowQuestionIndex);
 }
 
 nextButton.addEventListener("click", nextFunc);
