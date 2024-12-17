@@ -259,7 +259,6 @@ console.log(maxNumber); // 30`,
         title: 'Q16. Function', 
         name:'김민희', 
         question: `
-(난이도 - 쉬움)
 &&와 ||를 사용하여, 학생의 퀴즈1, 퀴즈2, 퀴즈3의 점수를 넣으면
 재응시 대상인지 알려주는 함수 isPass를 만들어주세요.
 함수 isPass는 하나라도 0점이 있으면 '재응시 대상자입니다.'를 출력하고,
@@ -274,7 +273,6 @@ isPass(1, 2, 3); // 통과입니다.`,
         title: 'Q17. Parameter', 
         name:'김민희', 
         question: `
-(난이도 - 쉬움)
 학생의 이름, 학년, 수료한 강의명들을 파라미터로 받아서
 "_학년 _이(가) 수료한 강의는 총 _개 입니다."를
 출력하는 함수 printCoursesRecord를 만들어주세요.
@@ -292,7 +290,6 @@ printCoursesRecord('박명수', 4, 'CSS 레이아웃', '유닉스 시스템');
         title: 'Q18. Callback', 
         name:'김민희', 
         question: `
-(난이도 - 보통)
 주어진 배열 요소들의 평균이 예측 평균과 같은지 확인하는
 함수 isAverage와 콜백함수를 만들어주세요.
 - 맞으면 True, 틀리면 False를 리턴합니다.
@@ -310,7 +307,6 @@ isAverage([4, 5, 6], 3, basicPrinter); // 틀렸습니다!`,
         title: 'Q19. Callback 2', 
         name:'김민희', 
         question: `
-(난이도 - 쉬움)
 3번 문제의 isAverage에서 콜백함수의 필요성이 줄어들었습니다.
 사용할 때만 콜백함수를 입력받게 isAverage를 수정해주세요.
 `, 
@@ -324,7 +320,6 @@ isAverage([4, 5, 6], 5, basicPrinter); // 정답입니다!`,
         title: 'Q20. Callback 2', 
         name:'김민희', 
         question: `
-(난이도 - )
 아래의 함수 사용 예시와 출력 내용대로
 작동할 수 있도록 함수들을 만들어주세요.
 
