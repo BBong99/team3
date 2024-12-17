@@ -169,6 +169,186 @@ console.log(hasDuplicates([1, 2, 2, 4]));    // 출력: true`,
 
 };`,
     },
+    {
+        title: 'Q11. Return', 
+        name:'봉재완', 
+        question: `
+목표: 주어진 배열의 각 숫자를 제곱으로 변환하는 함수를 작성하세요.
+`, 
+        code: `function squareArray(array) {
+  // 여기에 함수를 작성하세요.
+}
+
+const numbers = [1, 2, 3, 4];
+const squared = squareArray(numbers);
+console.log(squared); // [1, 4, 9, 16]`,
+    },
+    {
+        title: 'Q12. Filtering', 
+        name:'봉재완', 
+        question: `
+목표: 주어진 배열에서 특정 조건을 만족하는 숫자만
+반환하는 함수를 작성하세요.
+조건: 숫자가 짝수일 경우만 반환합니다.
+힌트: filter() 메서드는 주어진 배열에서 제공된
+함수에 의해 구현된 테스트를 통과한 요소만 필터링합니다.
+`, 
+        code: `function filterEvenNumbers(array) {
+  // 여기에 함수를 작성하세요.
+}
+
+const numbers = [1, 2, 3, 4, 5, 6];
+const evens = filterEvenNumbers(numbers);
+console.log(evens); // [2, 4, 6]`,
+    },
+    {
+        title: 'Q13. Filtering 2', 
+        name:'봉재완', 
+        question: `
+짝수만 필터링후 제곱으로 반환
+`, 
+        code: `function filterEvenNumbers(array) {
+  // 여기에 함수를 작성하세요.
+};
+
+
+const numbers = [1, 2, 3, 4, 5, 6];
+const evens = filterEvenNumbers(numbers);
+console.log(evens); // [4, 16, 36]`,
+    },
+    {
+        title: 'Q14. Array', 
+        name:'봉재완', 
+        question: `
+주어진 배열의 모든 숫자를 더하는 함수를 작성하세요.
+힌트: reduce()를 사용하면 배열을 순회하며 누적 합을 구할 수 있습니다.
+`, 
+        code: `function sumArray(array) {
+
+  // 여기에 함수를 작성하세요.
+
+}
+
+
+
+
+const numbers = [1, 2, 3, 4];
+
+const total = sumArray(numbers);
+
+console.log(total); // 10`,
+    },
+
+    {
+        title: 'Q15. Array 2', 
+        name:'봉재완', 
+        question: `
+주어진 배열에서 가장 큰 숫자를 찾아 반환하는 함수를 작성하세요.
+힌트: Math.max()와 스프레드 연산자(...)를 사용할 수 있습니다.
+`, 
+        code: `function findMax(array) {
+  // 여기에 함수를 작성하세요.
+}
+
+const numbers = [10, 20, 5, 8, 30];
+const maxNumber = findMax(numbers);
+console.log(maxNumber); // 30`,
+    },
+
+    {
+        title: 'Q16. Function', 
+        name:'김민희', 
+        question: `
+&&와 ||를 사용하여, 학생의 퀴즈1, 퀴즈2, 퀴즈3의 점수를 넣으면
+재응시 대상인지 알려주는 함수 isPass를 만들어주세요.
+함수 isPass는 하나라도 0점이 있으면 '재응시 대상자입니다.'를 출력하고,
+그렇지 않으면 '통과입니다'를 출력합니다.
+`, 
+        code: `// 함수 사용 예시
+isPass(3, 2, 0); // 재응시 대상자입니다.
+isPass(1, 2, 3); // 통과입니다.`,
+    },
+
+    {
+        title: 'Q17. Parameter', 
+        name:'김민희', 
+        question: `
+학생의 이름, 학년, 수료한 강의명들을 파라미터로 받아서
+"_학년 _이(가) 수료한 강의는 총 _개 입니다."를
+출력하는 함수 printCoursesRecord를 만들어주세요.
+(수강생마다 수료한 강의 개수는 다릅니다.)
+`, 
+        code: `// 함수 사용 예시
+printCoursesRecord('유재석', 3, 'HTML의 이해', 'CSS 레이아웃',
+'인터랙티브 JavaScript');
+// 3학년 유재석이(가) 수료한 강의는 총 3개입니다.
+printCoursesRecord('박명수', 4, 'CSS 레이아웃', '유닉스 시스템');
+// 4학년 박명수이(가) 수료한 강의는 총 2개입니다.`,
+    },
+
+    {
+        title: 'Q18. Callback', 
+        name:'김민희', 
+        question: `
+주어진 배열 요소들의 평균이 예측 평균과 같은지 확인하는
+함수 isAverage와 콜백함수를 만들어주세요.
+- 맞으면 True, 틀리면 False를 리턴합니다.
+- 결과를 문장으로 출력해주는 콜백함수를 사용하여
+맞으면 "정답입니다!", 틀리면 "틀렸습니다!"가 출력되어야 합니다.
+- 첫 번째 파라미터: 숫자가 들어간 배열,
+두 번째 파라미터: 예측 평균값, 세 번째 파라미터: 콜백함수
+`, 
+        code: `// 함수 사용 예시
+isAverage([1, 2, 3], 2, basicPrinter); // 정답입니다!
+isAverage([4, 5, 6], 3, basicPrinter); // 틀렸습니다!`,
+    },
+
+    {
+        title: 'Q19. Callback 2', 
+        name:'김민희', 
+        question: `
+3번 문제의 isAverage에서 콜백함수의 필요성이 줄어들었습니다.
+사용할 때만 콜백함수를 입력받게 isAverage를 수정해주세요.
+`, 
+        code: `// 함수 사용 예시
+const result1 = isAverage([1, 2, 3], 2);
+console.log(result1); // true;
+isAverage([4, 5, 6], 5, basicPrinter); // 정답입니다!`,
+    },
+
+    {
+        title: 'Q20. Callback 2', 
+        name:'김민희', 
+        question: `
+아래의 함수 사용 예시와 출력 내용대로
+작동할 수 있도록 함수들을 만들어주세요.
+
+- prosessString 함수: 시작 문구를 출력하고
+프로세스를 수행하는 함수입니다.
+
+  상황에 따라 시작 문구와 프로세스를 바꿀 수 있도록,
+  첫 번째 파라미터는 문구를 출력하는 함수를,
+  두 번째 파라미터는 프로세스를 수행하는 함수를 받습니다.
+
+- toUpperCaseString 함수: 파라미터로 들어온
+문자열 2개를 먼저 출력(입력 string: message1, message2)한 후,
+  들어온 문자열들을 대문자로 변환하여 하나의 문장으로 리턴합니다.
+`, 
+        code: `// 함수 사용 예시
+const message1 = "hype";
+const message2 = "boy";
+
+const stringProcessor = processStrings(startMessage,
+toUpperCaseString);
+const finalResult = stringProcessor(message1, message2);
+console.log("최종 결과:", finalResult);
+
+/* 출력 내용
+process를 시작합니다.
+입력 string: hype boy
+최종 결과: HYPE BOY
+*/`,
+    },
 
 
 ];
