@@ -110,9 +110,7 @@ header {
 
 #portfolios .contents {
   display: grid;
-  grid-template:
-    1fr/
-    1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr); /*grid-template에서 열만 설정할 수 있도록 수정했습니다.*/
   gap: 20px;
   padding: 20px;
   place-items: center;
@@ -134,9 +132,18 @@ header {
   text-align: center;
 }
 
-/* .active:hover {
-  color: #a1a18b;
-} */
+/*링크가 연결됨을 알 수 있으면 좋을거 같아서서 hover 활성화 시켰습니다.*/
+/* 기본 상태에서 hover */
+.active:hover {
+  color: #aee9ff; /* 라이트 모드 hover 색상 */
+}
+
+/* 다크모드 상태에서 hover */
+body.dark-mode .active:hover {
+  color: #ff8bf3; /* 다크 모드 hover 색상 */
+}
+
+
 
 /* 다크모드 */
 
