@@ -4,7 +4,7 @@ const hobbySection = document.querySelector(".hobby");
 
 
 let colors = true;
-let isImageVisible = false;
+let isImageVisible = true;
 
 
 
@@ -20,21 +20,21 @@ headerClick.onclick = function () {
 
 
 tmiButton.onclick = function () {
+  const existingImage = document.querySelector(".hobby-image");
+  const existingMessage = document.querySelector(".hobby-message");
 
-  let existingImage = document.querySelector(".hobby-image");
-
-  if (!isImageVisible) {
+  if (isImageVisible) {
 
     const img = document.createElement("img");
-    img.src = "img/rating.png"; // 여기에 이미지 경로
+    img.src = "img/poe2.jpg"; // 이미지 경로
     img.alt = "취미 관련 이미지";
-    img.style.maxWidth = "100%";
+    img.style.maxWidth = "60%";
     img.style.marginTop = "10px";
     img.classList.add("hobby-image");
     hobbySection.appendChild(img); 
 
   const message = document.createElement("p");
-    message.textContent = "이건 제가 가장 좋아하는 취미입니다!"; // 원하는 메시지
+    message.textContent = "요즘 POE2 재밋게 하고 있습니다!"; // 원하는 메시지
     message.style.marginTop = "10px";
     message.style.fontSize = "16px";
     message.classList.add("hobby-message");

@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -8,16 +10,24 @@ body {
   padding: 0;
 }
 
-p {
-  margin: 0px;
+img {
+  cursor: pointer;
 }
 
 .header {
   text-align: center;
-  padding: 20px;
+  padding: 40px;
   background-color: #4c53af;
   color: white;
   cursor: pointer;
+}
+
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 
@@ -28,10 +38,60 @@ p {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #FCFCFC;
+  gap: 30px;
+}
+
+.block {
+  width: 100%;
+  height: auto;
+  background-color: #FAF8EF;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 618px;
+  display: flex;
+  background-color: #FAF8EF;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite-music-ment {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.musicImg {
+  max-width: 50%;
+  height: auto;
+  margin: 20px;
+}
+
+.movieImg {
+  max-width: 100%;
+  margin: 20px;
 }
 
 .hobby {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #FAF8EF;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hobby-section {
   margin: 0;
   display: flex;
   flex-direction: column;
