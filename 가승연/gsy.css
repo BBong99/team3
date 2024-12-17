@@ -1,0 +1,82 @@
+body {
+  font-family: "GmarketSansMedium", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f8f8;
+  font-size: 1.5rem;
+}
+
+h1,
+h2 {
+  color: #222;
+  font-weight: bold;
+}
+
+.profile-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-info {
+  margin-left: 30px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.emoji {
+  font-size: 1.2em;
+}
+
+div.main {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+/* 이벤트 처리가 필요한 객체에 마우스 커서 포인터로 설정 */
+.profile-image,
+.best-playlist,
+.best-movie,
+.best-menu,
+.best-hobby,
+.my-tmi {
+  cursor: pointer;
+}
+
+/* display: none 중복 처리 */
+.profile-info,
+.playlist,
+.movie,
+.menu,
+.hobby,
+.tmi {
+  display: none;
+}
+
+/* visible class style 추가 */
+.visible {
+  display: block;
+}
