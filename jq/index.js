@@ -169,6 +169,92 @@ console.log(hasDuplicates([1, 2, 2, 4]));    // 출력: true`,
 
 };`,
     },
+    {
+        title: 'Q11. Return', 
+        name:'봉재완', 
+        question: `
+목표: 주어진 배열의 각 숫자를 제곱으로 변환하는 함수를 작성하세요.
+`, 
+        code: `function squareArray(array) {
+  // 여기에 함수를 작성하세요.
+}
+
+const numbers = [1, 2, 3, 4];
+const squared = squareArray(numbers);
+console.log(squared); // [1, 4, 9, 16]`,
+    },
+    {
+        title: 'Q12. Filtering', 
+        name:'봉재완', 
+        question: `
+목표: 주어진 배열에서 특정 조건을 만족하는 숫자만
+반환하는 함수를 작성하세요.
+조건: 숫자가 짝수일 경우만 반환합니다.
+힌트: filter() 메서드는 주어진 배열에서 제공된
+함수에 의해 구현된 테스트를 통과한 요소만 필터링합니다.
+`, 
+        code: `function filterEvenNumbers(array) {
+  // 여기에 함수를 작성하세요.
+}
+
+const numbers = [1, 2, 3, 4, 5, 6];
+const evens = filterEvenNumbers(numbers);
+console.log(evens); // [2, 4, 6]`,
+    },
+    {
+        title: 'Q13. Filtering 2', 
+        name:'봉재완', 
+        question: `
+짝수만 필터링후 제곱으로 반환
+`, 
+        code: `function filterEvenNumbers(array) {
+  // 여기에 함수를 작성하세요.
+};
+
+
+const numbers = [1, 2, 3, 4, 5, 6];
+const evens = filterEvenNumbers(numbers);
+console.log(evens); // [4, 16, 36]`,
+    },
+    {
+        title: 'Q14. Array', 
+        name:'봉재완', 
+        question: `
+주어진 배열의 모든 숫자를 더하는 함수를 작성하세요.
+힌트: reduce()를 사용하면 배열을 순회하며 누적 합을 구할 수 있습니다.
+`, 
+        code: `function sumArray(array) {
+
+  // 여기에 함수를 작성하세요.
+
+}
+
+
+
+
+const numbers = [1, 2, 3, 4];
+
+const total = sumArray(numbers);
+
+console.log(total); // 10`,
+    },
+
+    {
+        title: 'Q15. Array 2', 
+        name:'봉재완', 
+        question: `
+주어진 배열에서 가장 큰 숫자를 찾아 반환하는 함수를 작성하세요.
+힌트: Math.max()와 스프레드 연산자(...)를 사용할 수 있습니다.
+`, 
+        code: `function findMax(array) {
+  // 여기에 함수를 작성하세요.
+}
+
+const numbers = [10, 20, 5, 8, 30];
+const maxNumber = findMax(numbers);
+console.log(maxNumber); // 30`,
+    },
+
 
 
 ];
