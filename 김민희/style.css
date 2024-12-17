@@ -1,20 +1,23 @@
 @font-face {
-  font-family: 'Cafe24Nyangi-B-v1.0';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/Cafe24Nyangi-B-v1.0.woff2') format('woff2');
+  font-family: "Cafe24Nyangi-B-v1.0";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/Cafe24Nyangi-B-v1.0.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Cafe24Nyangi-W-v1.0';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/Cafe24Nyangi-W-v1.0.woff2') format('woff2');
+  font-family: "Cafe24Nyangi-W-v1.0";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/Cafe24Nyangi-W-v1.0.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Ownglyph_ParkDaHyun';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+  font-family: "Ownglyph_ParkDaHyun";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -48,17 +51,17 @@ header {
   align-items: center;
 }
 
-#title{
+#title {
   text-align: center;
   margin: 10px 0;
   padding: 20px;
   font-size: 5rem;
-  font-family: 'Cafe24Nyangi-W-v1.0';
+  font-family: "Cafe24Nyangi-W-v1.0";
 }
 
 #mode-switch {
   margin: 10px 0 20px;
-  font-family: 'Ownglyph_ParkDaHyun';
+  font-family: "Ownglyph_ParkDaHyun";
 }
 
 #main {
@@ -87,14 +90,14 @@ header {
   width: 100%;
   border-bottom: 2.5px solid;
   padding: 10px;
-  font-family: 'Cafe24Nyangi-B-v1.0';
+  font-family: "Cafe24Nyangi-B-v1.0";
   font-size: 3rem;
 }
 
 .contents {
   padding: 10px 20px;
   font-size: 2rem;
-  font-family: 'Ownglyph_ParkDaHyun';
+  font-family: "Ownglyph_ParkDaHyun";
   letter-spacing: 3px;
   line-height: 35px;
 }
@@ -119,7 +122,7 @@ header {
 }
 
 .portfolio {
-  font-family: 'Ownglyph_ParkDaHyun';
+  font-family: "Ownglyph_ParkDaHyun";
   border-radius: 20px;
   background-color: black;
   color: white;
@@ -134,9 +137,27 @@ header {
   text-align: center;
 }
 
-/* .active:hover {
+.portfolio_active {
+  font-family: "Ownglyph_ParkDaHyun";
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 20px;
+  max-width: 80px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+/* portfolio_active 클라스 추가 */
+
+.portfolio_active:hover {
   color: #a1a18b;
-} */
+}
+/* portfolio_active 마우스 올리면 글씨 색상 변하도록 지정 */
 
 /* 다크모드 */
 
@@ -146,7 +167,7 @@ body.dark-mode {
 }
 
 body.dark-mode a {
-  color: white
+  color: white;
 }
 
 body.dark-mode .portfolio {
@@ -155,5 +176,9 @@ body.dark-mode .portfolio {
 }
 
 body.dark-mode #mode-switch {
-  color: white
+  color: white;
+}
+
+.portfolio_active {
+  cursor: pointer;
 }
