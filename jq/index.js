@@ -317,7 +317,7 @@ isAverage([4, 5, 6], 5, basicPrinter); // 정답입니다!`,
     },
 
     {
-        title: 'Q20. Callback 2', 
+        title: 'Q20. Function 2', 
         name:'김민희', 
         question: `
 아래의 함수 사용 예시와 출력 내용대로
