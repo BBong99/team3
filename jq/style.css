@@ -118,3 +118,74 @@ button {
 #questionContent {
     margin-bottom: 20px;
 }
+
+
+.codeInput {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    
+}
+
+textarea {
+    width: 95%;
+    height: 150px;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    border-radius: 16px;
+    padding: 10px;
+    resize: vertical;
+    
+    
+}
+
+
+
+#executeCode {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#output {
+    font-size: 1.4rem;
+    color: #333;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+    min-height: 50px;
+    white-space: pre-wrap;
+}
+
+
+#runBox {
+    display: flex;
+    justify-content: end;
+}
+
+#userCode {
+    outline-color: #FE6B8B;
+}
+
+#previous {
+    background-color: #FE6B8B;
+    border:none;
+    padding: 4px;
+    color:white;
+    border-radius: 8px;
+}
+
+#next {
+    background-color: #6b9efe;
+    border:none;
+    padding: 4px;
+    color:white;
+    border-radius: 8px;
+}
